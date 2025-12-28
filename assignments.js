@@ -1,8 +1,9 @@
 let country = "Nicaragua"
-let continent = "America"
+const continent = "America"
 let population = 2000000
-let isIsland = false
-let language
+const isIsland = false
+isIsland = true
+let language = "Spanish"
 
 console.log(isIsland)
 console.log(country)
