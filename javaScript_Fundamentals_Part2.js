@@ -17,3 +17,27 @@ const checkWinner = function (DolphinsAvg, KoalasAvg) {
 }
 
 checkWinner(DolphinsAvg, KoalasAvg);
+
+// Coding Challenge #2
+
+const bills = [125, 30, 44];
+const tips = [];
+
+function calcTip(bills){
+    
+    for(let i=0;i<bills.length;i++){
+     tips.push((bills[i]>=50 && bills[i]<=300) ? bills[i]*15/100 : bills[i]*20/100); 
+    }
+
+    return tips;
+}
+
+calcTip(bills);
+
+const total = [];
+
+for(let i=0;i<bills.length;i++){
+    total.push(bills[i]+tips[i]);
+}
+
+console.log(bills, tips, total);
