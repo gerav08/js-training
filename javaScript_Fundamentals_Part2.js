@@ -55,3 +55,33 @@ if(object1.BMI()>object2.BMI()){
 }else{
     console.log(`${object2.fullName}'s BMI (${object2.BMI()}) is higher than ${object1.fullName}'s (${object1.BMI()})`);
 }
+
+
+// Coding Challenge #4
+
+const bills2 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips2 = [];
+const totals = [];
+
+function calcTip2(bills2){
+    
+    for(let i=0;i<bills2.length;i++){
+     tips2.push((bills2[i]>=50 && bills2[i]<=300) ? bills2[i]*15/100 : bills2[i]*20/100); 
+     totals.push(bills2[i]+tips2[i]);
+    }
+
+    return tips2, totals;
+}
+
+function calcAverage2(arr){
+  let sum = 0;
+
+  for(let i=0;i<arr.length;i++){
+     sum+=arr[i];
+  }
+
+  return sum/arr.length;
+}
+
+calcTip2(bills2);
+console.log(calcAverage2(totals));
