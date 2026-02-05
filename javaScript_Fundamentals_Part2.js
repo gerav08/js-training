@@ -41,3 +41,17 @@ for(let i=0;i<bills.length;i++){
 }
 
 console.log(bills, tips, total);
+
+// Coding Challenge #3
+
+const object1 = {"fullName" : "Mark Miller", mass : 78, height : 1.69, 
+    BMI : function calcBMI(){ return this.mass/(this.height*this.height);}};
+
+const object2 = {"fullName" : "John Smith", mass : 92, height : 1.95,
+     BMI : function calcBMI(){return this.mass/(this.height*this.height);}};
+
+if(object1.BMI()>object2.BMI()){
+    console.log(`${object1.fullName}'s BMI (${object1.BMI()}) is higher than ${object2.fullName}'s (${object2.BMI()})`);
+}else{
+    console.log(`${object2.fullName}'s BMI (${object2.BMI()}) is higher than ${object1.fullName}'s (${object1.BMI()})`);
+}
